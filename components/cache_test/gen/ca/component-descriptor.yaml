@@ -17,14 +17,14 @@ spec:
     type: configdata.ocm.software
     version: v1.0.1
   - access:
-      imageReference: redis:6.0.4
+      imageReference: redis:6.0.1
       type: ociArtifact
     name: image
     relation: external
     type: ociImage
-    version: 6.2.1
+    version: 6.2.0
   - access:
-      localReference: sha256.5e76db455b20bed1b99d2755d9f016068c569deb424a7072f4804645eb756f5e
+      localReference: sha256.71bff539a92695f91e1954802981da04a07ed9e99655b4ec6c04c134f60ccb0d
       mediaType: application/x-tgz
       type: localBlob
     name: manifests
