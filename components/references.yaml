@@ -1,11 +1,11 @@
-name: backend_test
-componentName: github.com/sidhishruti22/backend_test
+name: backendtest
+componentName: github.com/sidhishruti22/backendtest
 version: v1.0.1
 ---
-name: frontend_test
-componentName: github.com/sidhishruti22/frontend_test
+name: frontendtest
+componentName: github.com/sidhishruti22/frontendtest
 version: v1.0.1
 ---
-name: cache_test
-componentName: github.com/sidhishruti22/cache_test
+name: cachetest
+componentName: github.com/sidhishruti22/cachetest
 version: v1.0.1

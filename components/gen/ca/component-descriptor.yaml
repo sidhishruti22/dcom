@@ -1,0 +1,19 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/podifytest
+  provider:
+    name: sidhishruti22
+  version: v1.0.1
+repositoryContexts: []
+spec:
+  references:
+  - componentName: github.com/sidhishruti22/backendtest
+    name: backendtest
+    version: v1.0.1
+  - componentName: github.com/sidhishruti22/frontendtest
+    name: frontendtest
+    version: v1.0.1
+  - componentName: github.com/sidhishruti22/cachetest
+    name: cachetest
+    version: v1.0.1
