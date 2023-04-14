@@ -1,0 +1,33 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/frontend_test
+  provider:
+    name: sidhishruti22
+  version: v1.0.1
+repositoryContexts: []
+spec:
+  resources:
+  - access:
+      localReference: sha256.ee79c92bbcce9e7a98f07c6577fd56dd45cf6f7c2d3115216ee249f42119030e
+      mediaType: application/yaml
+      type: localBlob
+    name: config
+    relation: local
+    type: configdata.ocm.software
+    version: v1.0.1
+  - access:
+      imageReference: ghcr.io/stefanprodan/podinfo:6.3.3
+      type: ociArtifact
+    name: image
+    relation: external
+    type: ociImage
+    version: 6.2.1
+  - access:
+      localReference: sha256.c787174b12ae1b4657530af140dce684dd3f8827e98e38e874b9b45c512ff584
+      mediaType: application/x-tgz
+      type: localBlob
+    name: manifests
+    relation: local
+    type: kustomize.ocm.fluxcd.io
+    version: v1.0.1
