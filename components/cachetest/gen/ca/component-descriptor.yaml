@@ -4,7 +4,7 @@ metadata:
   name: github.com/sidhishruti22/cachetest
   provider:
     name: sidhishruti22
-  version: v1.0.1
+  version: v1.0.2
 repositoryContexts: []
 spec:
   resources:
@@ -15,14 +15,14 @@ spec:
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.0.1
+    version: v1.0.2
   - access:
       imageReference: redis:6.0.1
       type: ociArtifact
     name: image
     relation: external
     type: ociImage
-    version: 6.2.0
+    version: 6.2.1
   - access:
       localReference: sha256.71bff539a92695f91e1954802981da04a07ed9e99655b4ec6c04c134f60ccb0d
       mediaType: application/x-tgz
@@ -30,4 +30,4 @@ spec:
     name: manifests
     relation: local
     type: kustomize.ocm.fluxcd.io
-    version: v1.0.1
+    version: v1.0.2

@@ -4,7 +4,7 @@ metadata:
   name: github.com/sidhishruti22/frontendtest
   provider:
     name: sidhishruti22
-  version: v1.0.1
+  version: v1.0.2
 repositoryContexts: []
 spec:
   resources:
@@ -15,14 +15,14 @@ spec:
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.0.1
+    version: v1.0.2
   - access:
-      imageReference: ghcr.io/stefanprodan/podinfo:6.3.3
+      imageReference: ghcr.io/stefanprodan/podinfo:6.3.5
       type: ociArtifact
     name: image
     relation: external
     type: ociImage
-    version: 6.2.1
+    version: 6.2.2
   - access:
       localReference: sha256.c787174b12ae1b4657530af140dce684dd3f8827e98e38e874b9b45c512ff584
       mediaType: application/x-tgz
@@ -30,4 +30,4 @@ spec:
     name: manifests
     relation: local
     type: kustomize.ocm.fluxcd.io
-    version: v1.0.1
+    version: v1.0.2

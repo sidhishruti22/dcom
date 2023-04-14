@@ -4,7 +4,7 @@ metadata:
   name: github.com/sidhishruti22/backendtest
   provider:
     name: sidhishruti22
-  version: v1.0.1
+  version: v1.0.2
 repositoryContexts: []
 spec:
   resources:
@@ -15,19 +15,19 @@ spec:
     name: config
     relation: local
     type: configdata.ocm.software
-    version: v1.0.1
+    version: v1.0.2
   - access:
-      imageReference: ghcr.io/stefanprodan/podinfo:6.3.3
+      imageReference: ghcr.io/stefanprodan/podinfo:6.3.5
       type: ociArtifact
     name: image
     relation: external
     type: ociImage
-    version: 6.2.1
+    version: 6.2.2
   - access:
-      localReference: sha256.fa26e176cd01db747a1659814d13f446fc6313c3405094537e384bc1db0868e0
+      localReference: sha256.883605d5f0fe2235b82e65719af715d0a80d4be500d9da294f3f27be17f2a3f7
       mediaType: application/x-tgz
       type: localBlob
     name: manifests
     relation: local
     type: kustomize.ocm.fluxcd.io
-    version: v1.0.1
+    version: v1.0.2
