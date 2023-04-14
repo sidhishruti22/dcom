@@ -1,9 +1,9 @@
-NAME                = podify_test
+NAME                = podifytest
 PROVIDER            ?= sidhishruti22
 COMPONENT           = github.com/$(PROVIDER)/$(NAME)
 OCI_REPO            ?= ghcr.io/sidhishruti22
 
-CHILD_COMPONENTS    ?= backend_test frontend_test cache_test
+CHILD_COMPONENTS    ?= backendtest frontendtest cachetest
 GEN_DIRS            := $(addprefix $(CHILD_COMPONENTS),/gen)
 
 VERSION             := $(shell cat VERSION)
